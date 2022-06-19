@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+
+
+ <div id="main">
+   
+
+    <div class="mapping">
+        <img src="map.png" usemap="#TrackStudents">
+
+        <map name="TrackStudents">
+            <area shape="poly" coords="71,197,78,184,95,179,100,174,101,169,118,166,143,191,134,195,133,202,121,207,107,209,103,213,95,212,90,208,78,216,77,207,62,200" onclick="getDistrict(Thane)">
+            <area shape="poly" coords="81,293,103,284,113,299,126,299,127,310,136,313,136,330,134,341,135,352,146,360,139,373,147,385,105,393,81,295"  onclick="getDistrict(Ratnagiri)">
+            <area shape="poly" coords="78,234,71,226,80,216,121,209,123,217,116,219,106,250,115,269,133,288,126,300,110,298,102,285,82,293,68,235" onclick="getDistrict(Raigad)">
+            <area shape="poly" coords="105,394,131,392,138,403,145,401,157,414,156,420,148,424,159,426,170,439,175,451,160,456,151,446,133,453,119,436," onclick="getDistrict(Sindhudurg)">
+        </map>
+    </div>
+
+
+
+   <div class="info">
+        <h2><i>List of Students from Dbatu</i></h2>
+        <br><br>
+        
+        <ul id="myList"></ul>
+
+
+   </div>
+
+ </div>
+
+
+
+
+ <script>
+
+
+            let Thane = ["Ajinkya","Ameya"];
+            let Ratnagiri= ["Musad","Akshay"];
+            let Raigad=["Mubasshir","Jay","Prasad"];
+            let Sindhudurg=["Shashank"];
+
+        function getDistrict(para)
+        {
+            myList.innerHTML = '';
+            let list = document.getElementById("myList");
+
+            para.forEach((item) => {
+                let li = document.createElement("li");
+                li.innerText = item;
+                list.appendChild(li);
+            });
+        }
+
+
+</script>
+
+
+
+
+</body>
+</html>

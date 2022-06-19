@@ -1,0 +1,22 @@
+img{
+    width: 800px;
+    height: 458px;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 1px solid red; */
+}
+
+.mapping{
+    float: left;   
+}
+
+.info{   
+    float: left;
+    /* border: 1px solid red;    */
+}
+
+.info h2{
+    color: blue;
+    padding-top: 80px;
+    padding-left: 100px;
+}
