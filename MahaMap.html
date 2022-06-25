@@ -8,29 +8,35 @@
     <title>Document</title>
 </head>
 
-
  <div id="main">
-   
 
     <div class="mapping">
         <img src="map.png" usemap="#TrackStudents">
 
         <map name="TrackStudents">
-             <area shape="poly" coords="71,197,78,184,95,179,100,174,101,169,118,166,143,191,134,195,133,202,121,207,107,209,103,213,95,212,90,208,78,216,77,207,62,200" onmouseover="getDistrict(Thane)">
+            <area shape="poly" coords="71,197,78,184,95,179,100,174,101,169,118,166,143,191,134,195,133,202,121,207,107,209,103,213,95,212,90,208,78,216,77,207,62,200" onmouseover="getDistrict(Thane)">
             <area shape="poly" coords="81,293,103,284,113,299,126,299,127,310,136,313,136,330,134,341,135,352,146,360,139,373,147,385,105,393,81,295"  onmouseover="getDistrict(Ratnagiri)">
             <area shape="poly" coords="78,234,71,226,80,216,121,209,123,217,116,219,106,250,115,269,133,288,126,300,110,298,102,285,82,293,68,235" onmouseover="getDistrict(Raigad)">
             <area shape="poly" coords="105,394,131,392,138,403,145,401,157,414,156,420,148,424,159,426,170,439,175,451,160,456,151,446,133,453,119,436," onmouseover="getDistrict(Sindhudurg)">
+            <area shape="poly" coords="60,200,76,210,67,219,64,216" onmouseover="getDistrict(Mumbai)"">
+            <area shape="poly" coords="99,137,111,133,110,119,110,101,153,94,153,88,208,90,224,102,226,131,215,134,212,149,178,148,188,160,163,169,150,164,129,176,115,148" onmouseover="getDistrict(Nashik)">
+            <area shape="poly" coords="135,348,137,367,217,380,216,388,308,393,180,394,187,410,200,425,192,444,179,450,158,424,147,423,157,413,144,400,138,401,134,388,146,384,146,355" onmouseover="getDistrict(Kolhapur)">
+            <area shape="poly" coords="135,342,162,352,184,346,180,330,214,331,227,326,233,316,242,329,228,344,261,342,267,348,276,232,290,329,294,361,262,364,256,370,240,363,235,378,165,365,147,348" onmouseover="getDistrict(Sangli)">
+            <area shape="poly" coords="146,74,195,53,200,43,219,40,220,30,252,45,241,61,227,70,235,96,225,102,210,97,204,86,154,87" onmouseover="getDistrict(Dhule)">
+            <area shape="poly" coords="127,176,152,169,168,172,186,163,189,157,180,148,212,150,206,160,282,197,258,212,236,208,236,219,222,219,252,242,274,229,286,239,264,252,251,250,228,265,217,253,175,213,185,203" onmouseover="getDistrict(Ahmednagar)">
+            <area shape="poly" coords="347,247,377,254,374,246,382,234,400,230,405,239,425,247,420,267,394,277,393,297,368,285,339,275,344,267" onmouseover="getDistrict(Latur)">
+            <area shape="poly" coords="252,45,324,48,337,67,349,68,345,78,332,73,315,96,311,106,291,96,272,109,266,103,234,126,227,126,222,102,239,97,229,64,248,57" onmouseover="getDistrict(Jalgaon)">
+            <area shape="poly" coords="348,68,366,60,377,61,380,80,374,78,379,107,372,111,374,120,384,125,370,135,370,155,350,150,330,156,316,146,344,122,324,118,320,124,313,124,319,107,323,80,332,72,346,48" onmouseover="getDistrict(Buldhana)">
+            <area shape="poly" coords="380,62,408,58,407,82,441,84,446,90,384,124,374,118,380,108" onmouseover="getDistrict(Akola)">
+            <area shape="poly" coords="499,49,576,100,570,110,563,107,546,113,543,120,519,106,502,103,502,84,483,53," onmouseover="getDistrict(Wardha)">
+
         </map>
     </div>
 
-
-
    <div class="info">
         <h2><i>List of Students from Dbatu</i></h2>
-        <br><br>
-        
-        <ul id="myList"></ul>
 
+        <ul id="myList"></ul>
 
    </div>
 
@@ -42,13 +48,24 @@
  <script>
 
 
-            let Thane = ["Ajinkya"];
-            let Ratnagiri= ["Musad","Akshay"];
-            let Raigad=["Mubasshir","Jay","Prasad"];
-            let Sindhudurg=["Shashank"];
-
+            let Thane = ["Ajinkya Kedia"];
+            let Ratnagiri= ["Musad Sarguru","Akshay"];
+            let Raigad=["Mubasshir isane","Jay Patil","Prasad Goregaonkar","Urusa Dalvi","Aaliya Bandarkar","Aadesh Lad","Umair Karel","Shruti Palkar","Pranali Dhepe","Ravina Jadhav","Srushti Bhonkar","Ameya pugaonkar","Nupur Sawant","Ameya Ranade","Suyog Kadam","Sunil Verma","Mansi Pawar"];
+            let Sindhudurg=["Shashank Surve"];
+            let Mumbai = ["Mahesh Sawant"];
+            let Nashik = ["Mayuri Sable","Tejal Alai"];
+            let Kolhapur = ["Ramesh Choudhari"];
+            let Sangli = ["Sarvesh Gajendragadkar","Namira Mujawar"];
+            let Dhule = ["Rushikesh Thakare","Kadambari Patil"];
+            let Ahmednagar = ["Yogesh Deolalkar","vedant Pathak","Preeti Thange"];
+            let Latur = ["Nilprasad Birajdar","Aditya Navgare","Aditya gurav","Shinde Priyanka"];
+            let Jalgaon = ["Ronak Patil"];
+            let Buldhana = ["Smitesh Patil","Shadab Shaikh"];
+            let Akola = ["Atharwa Khadse"];
+            let Wardha = ["Vedant Hiwarkar"];
         function getDistrict(para)
         {
+            // Dist.innerHTML=para;
             myList.innerHTML = '';
             let list = document.getElementById("myList");
 
@@ -61,8 +78,6 @@
 
 
 </script>
-
-
 
 
 </body>
